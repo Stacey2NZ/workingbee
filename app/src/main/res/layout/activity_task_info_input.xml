@@ -6,4 +6,124 @@
     android:layout_height="match_parent"
     tools:context=".TaskInfoInput">
 
+    <TextView
+        android:id="@+id/welcomeTextViewInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_bold"
+        android:text="@string/welcomeMessage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="132dp"
+        android:layout_height="82dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/workingbeelogo" />
+
+    <Spinner
+        android:id="@+id/spinnerTaskList"
+        android:layout_width="127dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#AFA9A9"
+        app:layout_constraintEnd_toEndOf="@+id/chooseTaskTextView"
+        app:layout_constraintStart_toStartOf="@+id/chooseTaskTextView"
+        app:layout_constraintTop_toBottomOf="@+id/chooseTaskTextView" />
+
+    <TextView
+        android:id="@+id/chooseTaskTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/atma_bold"
+        android:text="@string/chooseTask"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <TimePicker
+        android:id="@+id/timepicker1"
+        android:layout_width="148dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="4dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/timePicker2"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startTimeTextView"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TimePicker
+        android:id="@+id/timePicker2"
+        android:layout_width="177dp"
+        android:layout_height="91dp"
+        android:layout_marginEnd="16dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintBottom_toBottomOf="@+id/timepicker1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timepicker1"
+        app:layout_constraintVertical_bias="0.33" />
+
+    <TextView
+        android:id="@+id/startTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/startTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTaskList" />
+
+    <TextView
+        android:id="@+id/finishTimeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/finishTime"
+        app:layout_constraintStart_toEndOf="@+id/startTimeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerTaskList" />
+
+    <Button
+        android:id="@+id/saveBtnTaskInput"
+        android:layout_width="83dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="147dp"
+        android:text="@string/save"
+        app:layout_constraintEnd_toEndOf="@+id/timePicker2"
+        app:layout_constraintStart_toStartOf="@+id/timepicker1"
+        app:layout_constraintTop_toBottomOf="@+id/timePicker2" />
+
+    <Button
+        android:id="@+id/exitBtnTaskInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="25dp"
+        android:text="@string/exit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtnTaskInput" />
+
+    <Button
+        android:id="@+id/backBtnTaskInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="28dp"
+        android:text="@string/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/exitBtnTaskInput"
+        app:layout_constraintTop_toBottomOf="@+id/saveBtnTaskInput" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,6 @@ public class TaskInfoInput extends AppCompatActivity {
         final Button exitBtn = findViewById(R.id.exitBtnTaskInput);
         final Button saveBtn = findViewById(R.id.saveBtnTaskInput);
         int minutesTotal;
-        String timex, timey;
 
         Calendar c = Calendar.getInstance();
 
@@ -78,7 +77,7 @@ public class TaskInfoInput extends AppCompatActivity {
                     dialog.show();
                 }
                 else {
-                    //instantiating the alert for save confirmation
+                    //instantiating the alert for error message
                     AlertDialog.Builder builder = new AlertDialog.Builder(TaskInfoInput.this);
                     //Setting the characteristics
                     builder.setMessage("Check your times and try again");

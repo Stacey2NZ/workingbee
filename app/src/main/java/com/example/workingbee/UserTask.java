@@ -21,6 +21,9 @@ public class UserTask {
     @ColumnInfo(name = "dateRecorded")
     private String dateRecorded;
 
+    @ColumnInfo(name = "Comments")
+    private String comments;
+
     public int getId() {
         return id;
     }
@@ -51,5 +54,13 @@ public class UserTask {
 
     public void setDateRecorded(String dateRecorded) {
         this.dateRecorded = dateRecorded;
+    }
+
+    public String getComments() {
+        return comments;
+    }
+
+    public void setComments(String comments) {
+        this.comments = comments;
     }
 }

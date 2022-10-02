@@ -2,6 +2,7 @@ package com.example.workingbee;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -19,7 +20,8 @@ public class MainActivity extends AppCompatActivity {
         // Code for login functions of checking if a user is selected, retrieving their data for next activity
         loginBtn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-
+                Intent i = new Intent(getApplicationContext(), TaskInfoInput.class);
+                startActivity(i);
             }
         });
 

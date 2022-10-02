@@ -38,15 +38,14 @@
         android:id="@+id/exitBtnLogin"
         android:layout_width="88dp"
         android:layout_height="48dp"
-        android:layout_marginStart="45dp"
-        android:layout_marginTop="156dp"
-        android:layout_marginEnd="279dp"
-        android:layout_marginBottom="67dp"
+        android:layout_marginTop="104dp"
         android:text="@string/exit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginBtnLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/loginBtnLogin"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/workingbeelogo"
